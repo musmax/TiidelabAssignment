@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EAGLES|Function Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+    
+//     Write a program that uses console.log to print all the numbers from 1 to 200, with two exceptions.
+// For numbers divisible by 6, print "Shams" instead of the number, and for numbers divisible by 8 (and
+// not 6), print "TIIDELAB" instead. When you have that working, modify your program to print
+// "ShamsTIIDELAB" for numbers that are divisible by both 6 and 8 (and still print "Shams" or
+// "TIIDELAB" for numbers divisible by only one of those).
+
+
+        for (let i = 1; i <= 200; i++)
+        {
+            if (i % 6 == 0 && i % 8 == 0)
+            {
+                console.log("ShamsTIIDELab");
+            }
+            else if (i % 6 == 0)
+            {
+                console.log("shams");
+            }
+            else if(i % 8 == 0) 
+            {
+                console.log("TIIDELab");
+            }
+            else
+            {
+                console.log(i);
+            }
+        }
+// question 2
+// NOTICE NOTICE NOTICE
+// i used + to represent the empty spacing because i couldnt print out single empty space as a character
+
+        for (let i = 0; i <= 8; i++)
+        {
+          if (i % 2 == 1)
+          {
+              for (j = 1; j <= 5; j++)
+              {
+                  if (j == 1)
+                  {
+                      document.write("+")
+                  }
+                  else
+                  {
+                      document.write("*");
+                  }
+              }
+          
+          }
+          else
+          {
+            for (j = 1; j <= 5; j++)
+              {
+                  if (j == 5)
+                  {
+                     document.write("+");
+                  }
+                  else
+                  {
+                      document.write("*");
+                  }
+              }
+          }
+          document.write("<br>");
+   
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
